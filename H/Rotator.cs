@@ -1,5 +1,8 @@
 ﻿namespace H
 {
+    /// <summary>
+    /// Time complexity: Big_O(d * n).
+    /// </summary>
     public static class Rotator
     {
         public static void RotateLeft(int[] array, int d)
