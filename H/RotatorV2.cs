@@ -7,22 +7,23 @@
     {
         public static void RotateLeft(int[] array, int d)
         {
-            d = d % array.Length;
-
+            int n = array.Length;
+            d = d % n;
             // three traversals
             Reverse(array, startIndex: 0, endIndex: d - 1);
-            Reverse(array, startIndex: d, endIndex: array.Length - 1);
-            Reverse(array, startIndex: 0, array.Length - 1);
+            Reverse(array, startIndex: d, endIndex: n - 1);
+            Reverse(array, startIndex: 0, n - 1);
         }
 
         public static void RotateRight(int[] array, int d)
         {
+            int n = array.Length;
             d = d % array.Length;
 
             // three traversals
-            Reverse(array, startIndex: 0, endIndex: array.Length - d - 1);
-            Reverse(array, startIndex: array.Length - d, endIndex: array.Length - 1);
-            Reverse(array, startIndex: 0, array.Length - 1);
+            Reverse(array, startIndex: 0, endIndex: n - d - 1);
+            Reverse(array, startIndex: n - d, endIndex: n - 1);
+            Reverse(array, startIndex: 0, n - 1);
         }
 
         public static void Reverse(int[] array, int startIndex, int endIndex)
