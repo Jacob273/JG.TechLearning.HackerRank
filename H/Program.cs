@@ -3,9 +3,9 @@ using H;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 int[] arr = { 1, 2, 3, 4, 5 };
-Rotator.RotateRight(arr, 1);
+RotatorV1.RotateRight(arr, 1);
 Assert.IsTrue(new int[] { 5, 1, 2, 3, 4 }.SequenceEqual(arr), "Not equal");
-Rotator.RotateRight(arr, 1);
+RotatorV1.RotateRight(arr, 1);
 Assert.IsTrue(new int[] { 4, 5, 1, 2, 3 }.SequenceEqual(arr), "Not equal");
-Rotator.RotateRight(arr, 3);
+RotatorV1.RotateRight(arr, 3);
 Assert.IsTrue(new int[] { 1, 2, 3, 4, 5 }.SequenceEqual(arr), "Not equal");

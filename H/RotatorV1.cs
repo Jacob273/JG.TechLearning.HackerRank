@@ -3,7 +3,7 @@
     /// <summary>
     /// Time complexity: Big_O(d * n).
     /// </summary>
-    public static class Rotator
+    public static class RotatorV1
     {
         public static void RotateLeft(int[] array, int d)
         {
