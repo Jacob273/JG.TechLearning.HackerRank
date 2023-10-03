@@ -23,3 +23,10 @@ RotatorV2.RotateRight(arr3, 1);
 Assert.IsTrue(new int[] { 4, 5, 1, 2, 3 }.SequenceEqual(arr3), "Not equal");
 RotatorV2.RotateRight(arr3, 3);
 Assert.IsTrue(new int[] { 1, 2, 3, 4, 5 }.SequenceEqual(arr3), "Not equal");
+
+
+Assert.IsTrue(AnagramCheckerV1.IsAngram("listen", "silent"));
+Assert.IsFalse(AnagramCheckerV1.IsAngram("listenn", "silent"));
+Assert.IsFalse(AnagramCheckerV1.IsAngram("aabb", "ab"));
+Assert.IsFalse(AnagramCheckerV1.IsAngram("ab", "aba"));
+Assert.IsTrue(AnagramCheckerV1.IsAngram("abca", "bcaa"));
