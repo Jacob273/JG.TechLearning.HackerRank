@@ -30,3 +30,10 @@ Assert.IsFalse(AnagramCheckerV1.IsAngram("listenn", "silent"));
 Assert.IsFalse(AnagramCheckerV1.IsAngram("aabb", "ab"));
 Assert.IsFalse(AnagramCheckerV1.IsAngram("ab", "aba"));
 Assert.IsTrue(AnagramCheckerV1.IsAngram("abca", "bcaa"));
+
+
+Assert.IsTrue(AnagramCheckerV2.IsAngram("listen", "silent"));
+Assert.IsFalse(AnagramCheckerV2.IsAngram("listenn", "silent"));
+Assert.IsFalse(AnagramCheckerV2.IsAngram("aabb", "ab"));
+Assert.IsFalse(AnagramCheckerV2.IsAngram("ab", "aba"));
+Assert.IsTrue(AnagramCheckerV2.IsAngram("abca", "bcaa"));
