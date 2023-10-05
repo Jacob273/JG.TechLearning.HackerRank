@@ -2,6 +2,8 @@
 using H;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+WordsCheckerV1.BruteForceCheck("iamiamiamidead");
+
 int[] arr = { 1, 2, 3, 4, 5 };
 RotatorV1.RotateRight(arr, 1);
 Assert.IsTrue(new int[] { 5, 1, 2, 3, 4 }.SequenceEqual(arr), "Not equal");
